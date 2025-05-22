@@ -229,6 +229,10 @@
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Alien World">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Titanic">
   <rdf:type rdf:resource="#Movie"/>
   <has_genre rdf:resource="#Romance"/>
@@ -294,6 +298,10 @@
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Period Drama">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#A_Walk_to_Remember">
   <rdf:type rdf:resource="#Movie"/>
   <has_genre rdf:resource="#Romance"/>
@@ -309,6 +317,10 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Teen_Love">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Teen Love">
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
@@ -377,6 +389,10 @@
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Serial Killer">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Goodfellas">
   <rdf:type rdf:resource="#Movie"/>
   <has_genre rdf:resource="#Crime"/>
@@ -394,20 +410,1096 @@
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Alien World">
+<owl:NamedIndividual rdf:about="#Tim_Robbins">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hope">
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Period Drama">
+<owl:NamedIndividual rdf:about="#The_Shawshank_Redemption">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Tim_Robbins"/>
+  <has_theme rdf:resource="#Hope"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.3</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Anarchy">
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Teen Love">
+<owl:NamedIndividual rdf:about="#Fight_Club">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Brad_Pitt"/>
+  <has_theme rdf:resource="#Anarchy"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.8</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jesse_Eisenberg">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Technology">
   <rdf:type rdf:resource="#Theme"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Serial Killer">
+<owl:NamedIndividual rdf:about="#The_Social_Network">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Jesse_Eisenberg"/>
+  <has_theme rdf:resource="#Technology"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Will_Smith">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Inspiration">
   <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Pursuit_of_Happyness">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Will_Smith"/>
+  <has_theme rdf:resource="#Inspiration"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Natalie_Portman">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Psychological">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Black_Swan">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Natalie_Portman"/>
+  <has_theme rdf:resource="#Psychological"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robert_Downey_Jr.">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Superhero">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Avengers">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Robert_Downey_Jr."/>
+  <has_theme rdf:resource="#Superhero"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Iron_Man">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Robert_Downey_Jr."/>
+  <has_theme rdf:resource="#Technology"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chris_Pratt">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Guardians_of_the_Galaxy">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Chris_Pratt"/>
+  <has_theme rdf:resource="#Space"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ryan_Reynolds">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Antihero">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Deadpool">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Ryan_Reynolds"/>
+  <has_theme rdf:resource="#Antihero"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gal_Gadot">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wonder_Woman">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Gal_Gadot"/>
+  <has_theme rdf:resource="#Superhero"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.4</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jennifer_Lawrence">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Hunger_Games">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Jennifer_Lawrence"/>
+  <has_theme rdf:resource="#Dystopia"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.2</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kristen_Stewart">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fantasy">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Twilight">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Romance"/>
+  <has_actor rdf:resource="#Kristen_Stewart"/>
+  <has_theme rdf:resource="#Fantasy"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.2</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dakota_Johnson">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#50_Shades_of_Grey">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Romance"/>
+  <has_actor rdf:resource="#Dakota_Johnson"/>
+  <has_theme rdf:resource="#Drama"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Clark_Gable">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#War">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gone_with_the_Wind">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Romance"/>
+  <has_actor rdf:resource="#Clark_Gable"/>
+  <has_theme rdf:resource="#War"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1939</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Alex_Hibbert">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Identity">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Moonlight">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Alex_Hibbert"/>
+  <has_theme rdf:resource="#Identity"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.4</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vincent_Cassel">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Social Issues">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#La_Haine">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Vincent_Cassel"/>
+  <has_theme rdf:resource="#Social Issues"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hugh_Jackman">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Logan">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Hugh_Jackman"/>
+  <has_theme rdf:resource="#Superhero"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joaquin_Phoenix">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joker">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Crime"/>
+  <has_actor rdf:resource="#Joaquin_Phoenix"/>
+  <has_theme rdf:resource="#Psychological"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jamie_Foxx">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Django_Unchained">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Crime"/>
+  <has_actor rdf:resource="#Jamie_Foxx"/>
+  <has_theme rdf:resource="#Revenge"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.4</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Comedy">
+  <rdf:type rdf:resource="#Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Wolf_of_Wall_Street">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Comedy"/>
+  <has_actor rdf:resource="#Leonardo_DiCaprio"/>
+  <has_theme rdf:resource="#Crime"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.2</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robin_Williams">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dead_Poets_Society">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Robin_Williams"/>
+  <has_theme rdf:resource="#Inspiration"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Biography">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Catch_Me_If_You_Can">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Crime"/>
+  <has_actor rdf:resource="#Leonardo_DiCaprio"/>
+  <has_theme rdf:resource="#Biography"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Great_Gatsby">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Leonardo_DiCaprio"/>
+  <has_theme rdf:resource="#Romance"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.2</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Benedict_Cumberbatch">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Imitation_Game">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Benedict_Cumberbatch"/>
+  <has_theme rdf:resource="#Biography"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Colin_Firth">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_King's_Speech">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Colin_Firth"/>
+  <has_theme rdf:resource="#Inspiration"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chiwetel_Ejiofor">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Slavery">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#12_Years_a_Slave">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Chiwetel_Ejiofor"/>
+  <has_theme rdf:resource="#Slavery"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Amy_Adams">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Communication">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Arrival">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Amy_Adams"/>
+  <has_theme rdf:resource="#Communication"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Alicia_Vikander">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AI">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ex_Machina">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Alicia_Vikander"/>
+  <has_theme rdf:resource="#AI"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Her">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Joaquin_Phoenix"/>
+  <has_theme rdf:resource="#AI"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sandra_Bullock">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Survival">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gravity">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Sandra_Bullock"/>
+  <has_theme rdf:resource="#Survival"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Revenant">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Leonardo_DiCaprio"/>
+  <has_theme rdf:resource="#Survival"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Adrien_Brody">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Pianist">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Adrien_Brody"/>
+  <has_theme rdf:resource="#War"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Miles_Teller">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Whiplash">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Miles_Teller"/>
+  <has_theme rdf:resource="#Music"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chadwick_Boseman">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Black_Panther">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Chadwick_Boseman"/>
+  <has_theme rdf:resource="#Superhero"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.3</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Animation">
+  <rdf:type rdf:resource="#Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shameik_Moore">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Spider-Man:_Into_the_Spider-Verse">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Shameik_Moore"/>
+  <has_theme rdf:resource="#Superhero"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.4</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Anthony_Gonzalez">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Family">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Coco">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Anthony_Gonzalez"/>
+  <has_theme rdf:resource="#Family"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.4</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Edward_Asner">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Adventure">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Up">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Edward_Asner"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.2</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Friendship">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Toy_Story">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Tom_Hanks"/>
+  <has_theme rdf:resource="#Friendship"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.3</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Albert_Brooks">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Finding_Nemo">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Albert_Brooks"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ginnifer_Goodwin">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zootopia">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Ginnifer_Goodwin"/>
+  <has_theme rdf:resource="#Crime"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Amy_Poehler">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Emotion">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Inside_Out">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Amy_Poehler"/>
+  <has_theme rdf:resource="#Emotion"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matthew_Broderick">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Coming of Age">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Lion_King">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Matthew_Broderick"/>
+  <has_theme rdf:resource="#Coming of Age"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Idina_Menzel">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Frozen">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Idina_Menzel"/>
+  <has_theme rdf:resource="#Fantasy"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.4</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Auli'i_Cravalho">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Moana">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Auli'i_Cravalho"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dwayne_Johnson">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jumanji:_Welcome_to_the_Jungle">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Dwayne_Johnson"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.9</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Johnny_Depp">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pirates_of_the_Caribbean">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Johnny_Depp"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Elijah_Wood">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Elijah_Wood"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.8</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Lord_of_the_Rings:_The_Two_Towers">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Elijah_Wood"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Lord_of_the_Rings:_The_Return_of_the_King">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Elijah_Wood"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.9</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Daniel_Radcliffe">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Magic">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Sorcerer's_Stone">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Chamber_of_Secrets">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.4</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Prisoner_of_Azkaban">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Goblet_of_Fire">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Order_of_the_Phoenix">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Half-Blood_Prince">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Deathly_Hallows:_Part_1">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_and_the_Deathly_Hallows:_Part_2">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Fantasy"/>
+  <has_actor rdf:resource="#Daniel_Radcliffe"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Hunger_Games:_Catching_Fire">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Jennifer_Lawrence"/>
+  <has_theme rdf:resource="#Dystopia"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Hunger_Games:_Mockingjay_–_Part_1">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Jennifer_Lawrence"/>
+  <has_theme rdf:resource="#Dystopia"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Hunger_Games:_Mockingjay_–_Part_2">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Jennifer_Lawrence"/>
+  <has_theme rdf:resource="#Dystopia"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Frozen_II">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Animation"/>
+  <has_actor rdf:resource="#Idina_Menzel"/>
+  <has_theme rdf:resource="#Fantasy"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.8</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mark_Hamill">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Space Opera">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Star_Wars:_Episode_IV_-_A_New_Hope">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Mark_Hamill"/>
+  <has_theme rdf:resource="#Space Opera"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Star_Wars:_Episode_V_-_The_Empire_Strikes_Back">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Mark_Hamill"/>
+  <has_theme rdf:resource="#Space Opera"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Star_Wars:_Episode_VI_-_Return_of_the_Jedi">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Mark_Hamill"/>
+  <has_theme rdf:resource="#Space Opera"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1983</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.3</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Felicity_Jones">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rogue_One:_A_Star_Wars_Story">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Felicity_Jones"/>
+  <has_theme rdf:resource="#Space Opera"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.8</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Guardians_of_the_Galaxy_Vol._2">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Chris_Pratt"/>
+  <has_theme rdf:resource="#Space"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Doctor_Strange">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#SciFi"/>
+  <has_actor rdf:resource="#Benedict_Cumberbatch"/>
+  <has_theme rdf:resource="#Magic"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paul_Rudd">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ant-Man">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Paul_Rudd"/>
+  <has_theme rdf:resource="#Superhero"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.3</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Scarlett_Johansson">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Spy">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Black_Widow">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Scarlett_Johansson"/>
+  <has_theme rdf:resource="#Spy"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.7</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jacob_Tremblay">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wonder">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Jacob_Tremblay"/>
+  <has_theme rdf:resource="#Inspiration"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_Beautiful_Mind">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Russell_Crowe"/>
+  <has_theme rdf:resource="#Biography"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.2</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matt_Damon">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Good_Will_Hunting">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Matt_Damon"/>
+  <has_theme rdf:resource="#Inspiration"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.3</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Blind_Side">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Sandra_Bullock"/>
+  <has_theme rdf:resource="#Inspiration"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Saving_Private_Ryan">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Tom_Hanks"/>
+  <has_theme rdf:resource="#War"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Supernatural">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Green_Mile">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Tom_Hanks"/>
+  <has_theme rdf:resource="#Supernatural"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Finance">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Big_Short">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Christian_Bale"/>
+  <has_theme rdf:resource="#Finance"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.8</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Denzel_Washington">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Heist">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Inside_Man">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Crime"/>
+  <has_actor rdf:resource="#Denzel_Washington"/>
+  <has_theme rdf:resource="#Heist"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Al_Pacino">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Heat">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Crime"/>
+  <has_actor rdf:resource="#Al_Pacino"/>
+  <has_theme rdf:resource="#Heist"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.2</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Emily_Blunt">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Drug War">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sicario">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Crime"/>
+  <has_actor rdf:resource="#Emily_Blunt"/>
+  <has_theme rdf:resource="#Drug War"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Thriller">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prisoners">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Crime"/>
+  <has_actor rdf:resource="#Hugh_Jackman"/>
+  <has_theme rdf:resource="#Thriller"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fionn_Whitehead">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dunkirk">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Action"/>
+  <has_actor rdf:resource="#Fionn_Whitehead"/>
+  <has_theme rdf:resource="#War"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Song_Kang-ho">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Parasite">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Drama"/>
+  <has_actor rdf:resource="#Song_Kang-ho"/>
+  <has_theme rdf:resource="#Thriller"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.6</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ralph_Fiennes">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Grand_Budapest_Hotel">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Comedy"/>
+  <has_actor rdf:resource="#Ralph_Fiennes"/>
+  <has_theme rdf:resource="#Adventure"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Rating>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shailene_Woodley">
+  <rdf:type rdf:resource="#Actor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Fault_in_Our_Stars">
+  <rdf:type rdf:resource="#Movie"/>
+  <has_genre rdf:resource="#Romance"/>
+  <has_actor rdf:resource="#Shailene_Woodley"/>
+  <has_theme rdf:resource="#Drama"/>
+  <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+  <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</Rating>
 </owl:NamedIndividual>
 
 
