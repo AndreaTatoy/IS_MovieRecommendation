@@ -47,3 +47,33 @@ def find_by_theme(theme_name: str):
         return []
 
     return [movie for movie in onto.Movie.instances() if theme in movie.has_theme]
+
+from pyvis.network import Network
+import os
+
+def visualize_ontology_graph(onto, output_path="ontology_graph.html"):
+    net = Network(height="600px", width="100%", directed=True)
+    
+    for movie in onto.Movie.instances():
+        movie_name = movie.name.replace("_", " ")
+        net.add_node(movie_name, label=movie_name, shape="box", color="orange")
+
+        # Add and link genres
+        for genre in movie.has_genre:
+            genre_name = genre.name
+            net.add_node(genre_name, label=genre_name, color="lightblue")
+            net.add_edge(movie_name, genre_name, label="genre")
+
+        # Add and link actors
+        for actor in movie.has_actor:
+            actor_name = actor.name
+            net.add_node(actor_name, label=actor_name, color="lightgreen")
+            net.add_edge(movie_name, actor_name, label="actor")
+
+        # Add and link themes
+        for theme in movie.has_theme:
+            theme_name = theme.name
+            net.add_node(theme_name, label=theme_name, color="lightpink")
+            net.add_edge(movie_name, theme_name, label="theme")
+
+    net.save_graph(output_path)

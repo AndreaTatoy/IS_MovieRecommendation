@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "orange", "id": "Forrest Gump", "label": "Forrest Gump", "shape": "box"}, {"color": "lightblue", "id": "Action", "label": "Action", "shape": "dot"}, {"color": "lightgreen", "id": "Tom_Hanks", "label": "Tom_Hanks", "shape": "dot"}, {"color": "lightpink", "id": "Romance", "label": "Romance", "shape": "dot"}, {"color": "orange", "id": "Harry Potter", "label": "Harry Potter", "shape": "box"}, {"color": "lightgreen", "id": "Emma_Watson", "label": "Emma_Watson", "shape": "dot"}, {"color": "lightpink", "id": "SciFi", "label": "SciFi", "shape": "dot"}, {"color": "orange", "id": "The Dark Knight", "label": "The Dark Knight", "shape": "box"}, {"color": "lightgreen", "id": "Christian_Bale", "label": "Christian_Bale", "shape": "dot"}, {"color": "lightpink", "id": "Crime", "label": "Crime", "shape": "dot"}, {"color": "orange", "id": "Gladiator", "label": "Gladiator", "shape": "box"}, {"color": "lightgreen", "id": "Russell_Crowe", "label": "Russell_Crowe", "shape": "dot"}, {"color": "lightpink", "id": "Revenge", "label": "Revenge", "shape": "dot"}, {"color": "orange", "id": "Mad Max: Fury Road", "label": "Mad Max: Fury Road", "shape": "box"}, {"color": "lightgreen", "id": "Charlize_Theron", "label": "Charlize_Theron", "shape": "dot"}, {"color": "lightpink", "id": "Post-Apocalyptic", "label": "Post-Apocalyptic", "shape": "dot"}, {"color": "orange", "id": "Inception", "label": "Inception", "shape": "box"}, {"color": "lightgreen", "id": "Leonardo_DiCaprio", "label": "Leonardo_DiCaprio", "shape": "dot"}, {"color": "lightpink", "id": "Mind-Bending", "label": "Mind-Bending", "shape": "dot"}, {"color": "orange", "id": "The Matrix", "label": "The Matrix", "shape": "box"}, {"color": "lightgreen", "id": "Keanu_Reeves", "label": "Keanu_Reeves", "shape": "dot"}, {"color": "lightpink", "id": "Cyberpunk", "label": "Cyberpunk", "shape": "dot"}, {"color": "orange", "id": "Interstellar", "label": "Interstellar", "shape": "box"}, {"color": "lightgreen", "id": "Matthew_McConaughey", "label": "Matthew_McConaughey", "shape": "dot"}, {"color": "lightpink", "id": "Space", "label": "Space", "shape": "dot"}, {"color": "orange", "id": "Blade Runner 2049", "label": "Blade Runner 2049", "shape": "box"}, {"color": "lightgreen", "id": "Ryan_Gosling", "label": "Ryan_Gosling", "shape": "dot"}, {"color": "lightpink", "id": "Dystopia", "label": "Dystopia", "shape": "dot"}, {"color": "orange", "id": "Avatar", "label": "Avatar", "shape": "box"}, {"color": "lightgreen", "id": "Sam_Worthington", "label": "Sam_Worthington", "shape": "dot"}, {"color": "lightpink", "id": "Alien_World", "label": "Alien_World", "shape": "dot"}, {"color": "lightpink", "id": "Alien World", "label": "Alien World", "shape": "dot"}, {"color": "orange", "id": "Titanic", "label": "Titanic", "shape": "box"}, {"color": "lightgreen", "id": "Kate_Winslet", "label": "Kate_Winslet", "shape": "dot"}, {"color": "lightpink", "id": "Tragedy", "label": "Tragedy", "shape": "dot"}, {"color": "orange", "id": "The Notebook", "label": "The Notebook", "shape": "box"}, {"color": "lightpink", "id": "Drama", "label": "Drama", "shape": "dot"}, {"color": "orange", "id": "La La Land", "label": "La La Land", "shape": "box"}, {"color": "lightgreen", "id": "Emma_Stone", "label": "Emma_Stone", "shape": "dot"}, {"color": "lightpink", "id": "Music", "label": "Music", "shape": "dot"}, {"color": "orange", "id": "Pride \u0026 Prejudice", "label": "Pride \u0026 Prejudice", "shape": "box"}, {"color": "lightgreen", "id": "Keira_Knightley", "label": "Keira_Knightley", "shape": "dot"}, {"color": "lightpink", "id": "Period_Drama", "label": "Period_Drama", "shape": "dot"}, {"color": "lightpink", "id": "Period Drama", "label": "Period Drama", "shape": "dot"}, {"color": "orange", "id": "A Walk to Remember", "label": "A Walk to Remember", "shape": "box"}, {"color": "lightgreen", "id": "Mandy_Moore", "label": "Mandy_Moore", "shape": "dot"}, {"color": "lightpink", "id": "Teen_Love", "label": "Teen_Love", "shape": "dot"}, {"color": "lightpink", "id": "Teen Love", "label": "Teen Love", "shape": "dot"}, {"color": "orange", "id": "The Godfather", "label": "The Godfather", "shape": "box"}, {"color": "lightgreen", "id": "Marlon_Brando", "label": "Marlon_Brando", "shape": "dot"}, {"color": "lightpink", "id": "Mafia", "label": "Mafia", "shape": "dot"}, {"color": "orange", "id": "Pulp Fiction", "label": "Pulp Fiction", "shape": "box"}, {"color": "lightgreen", "id": "John_Travolta", "label": "John_Travolta", "shape": "dot"}, {"color": "lightpink", "id": "Nonlinear", "label": "Nonlinear", "shape": "dot"}, {"color": "orange", "id": "The Departed", "label": "The Departed", "shape": "box"}, {"color": "lightpink", "id": "Undercover", "label": "Undercover", "shape": "dot"}, {"color": "orange", "id": "Se7en", "label": "Se7en", "shape": "box"}, {"color": "lightgreen", "id": "Brad_Pitt", "label": "Brad_Pitt", "shape": "dot"}, {"color": "lightpink", "id": "Serial_Killer", "label": "Serial_Killer", "shape": "dot"}, {"color": "lightpink", "id": "Serial Killer", "label": "Serial Killer", "shape": "dot"}, {"color": "orange", "id": "Goodfellas", "label": "Goodfellas", "shape": "box"}, {"color": "lightgreen", "id": "Robert_De_Niro", "label": "Robert_De_Niro", "shape": "dot"}, {"color": "lightpink", "id": "Gangster", "label": "Gangster", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Forrest Gump", "label": "genre", "to": "Action"}, {"arrows": "to", "from": "Forrest Gump", "label": "actor", "to": "Tom_Hanks"}, {"arrows": "to", "from": "Forrest Gump", "label": "theme", "to": "Romance"}, {"arrows": "to", "from": "Harry Potter", "label": "genre", "to": "Action"}, {"arrows": "to", "from": "Harry Potter", "label": "actor", "to": "Emma_Watson"}, {"arrows": "to", "from": "Harry Potter", "label": "theme", "to": "SciFi"}, {"arrows": "to", "from": "The Dark Knight", "label": "genre", "to": "Action"}, {"arrows": "to", "from": "The Dark Knight", "label": "actor", "to": "Christian_Bale"}, {"arrows": "to", "from": "The Dark Knight", "label": "theme", "to": "Crime"}, {"arrows": "to", "from": "Gladiator", "label": "genre", "to": "Action"}, {"arrows": "to", "from": "Gladiator", "label": "actor", "to": "Russell_Crowe"}, {"arrows": "to", "from": "Gladiator", "label": "theme", "to": "Revenge"}, {"arrows": "to", "from": "Mad Max: Fury Road", "label": "genre", "to": "Action"}, {"arrows": "to", "from": "Mad Max: Fury Road", "label": "actor", "to": "Charlize_Theron"}, {"arrows": "to", "from": "Mad Max: Fury Road", "label": "theme", "to": "Post-Apocalyptic"}, {"arrows": "to", "from": "Inception", "label": "genre", "to": "SciFi"}, {"arrows": "to", "from": "Inception", "label": "actor", "to": "Leonardo_DiCaprio"}, {"arrows": "to", "from": "Inception", "label": "theme", "to": "Mind-Bending"}, {"arrows": "to", "from": "The Matrix", "label": "genre", "to": "SciFi"}, {"arrows": "to", "from": "The Matrix", "label": "actor", "to": "Keanu_Reeves"}, {"arrows": "to", "from": "The Matrix", "label": "theme", "to": "Cyberpunk"}, {"arrows": "to", "from": "Interstellar", "label": "genre", "to": "SciFi"}, {"arrows": "to", "from": "Interstellar", "label": "actor", "to": "Matthew_McConaughey"}, {"arrows": "to", "from": "Interstellar", "label": "theme", "to": "Space"}, {"arrows": "to", "from": "Blade Runner 2049", "label": "genre", "to": "SciFi"}, {"arrows": "to", "from": "Blade Runner 2049", "label": "actor", "to": "Ryan_Gosling"}, {"arrows": "to", "from": "Blade Runner 2049", "label": "theme", "to": "Dystopia"}, {"arrows": "to", "from": "Avatar", "label": "genre", "to": "SciFi"}, {"arrows": "to", "from": "Avatar", "label": "actor", "to": "Sam_Worthington"}, {"arrows": "to", "from": "Avatar", "label": "theme", "to": "Alien_World"}, {"arrows": "to", "from": "Avatar", "label": "theme", "to": "Alien World"}, {"arrows": "to", "from": "Titanic", "label": "genre", "to": "Romance"}, {"arrows": "to", "from": "Titanic", "label": "actor", "to": "Kate_Winslet"}, {"arrows": "to", "from": "Titanic", "label": "theme", "to": "Tragedy"}, {"arrows": "to", "from": "The Notebook", "label": "genre", "to": "Romance"}, {"arrows": "to", "from": "The Notebook", "label": "actor", "to": "Ryan_Gosling"}, {"arrows": "to", "from": "The Notebook", "label": "theme", "to": "Drama"}, {"arrows": "to", "from": "La La Land", "label": "genre", "to": "Romance"}, {"arrows": "to", "from": "La La Land", "label": "actor", "to": "Emma_Stone"}, {"arrows": "to", "from": "La La Land", "label": "theme", "to": "Music"}, {"arrows": "to", "from": "Pride \u0026 Prejudice", "label": "genre", "to": "Romance"}, {"arrows": "to", "from": "Pride \u0026 Prejudice", "label": "actor", "to": "Keira_Knightley"}, {"arrows": "to", "from": "Pride \u0026 Prejudice", "label": "theme", "to": "Period_Drama"}, {"arrows": "to", "from": "Pride \u0026 Prejudice", "label": "theme", "to": "Period Drama"}, {"arrows": "to", "from": "A Walk to Remember", "label": "genre", "to": "Romance"}, {"arrows": "to", "from": "A Walk to Remember", "label": "actor", "to": "Mandy_Moore"}, {"arrows": "to", "from": "A Walk to Remember", "label": "theme", "to": "Teen_Love"}, {"arrows": "to", "from": "A Walk to Remember", "label": "theme", "to": "Teen Love"}, {"arrows": "to", "from": "The Godfather", "label": "genre", "to": "Crime"}, {"arrows": "to", "from": "The Godfather", "label": "actor", "to": "Marlon_Brando"}, {"arrows": "to", "from": "The Godfather", "label": "theme", "to": "Mafia"}, {"arrows": "to", "from": "Pulp Fiction", "label": "genre", "to": "Crime"}, {"arrows": "to", "from": "Pulp Fiction", "label": "actor", "to": "John_Travolta"}, {"arrows": "to", "from": "Pulp Fiction", "label": "theme", "to": "Nonlinear"}, {"arrows": "to", "from": "The Departed", "label": "genre", "to": "Crime"}, {"arrows": "to", "from": "The Departed", "label": "actor", "to": "Leonardo_DiCaprio"}, {"arrows": "to", "from": "The Departed", "label": "theme", "to": "Undercover"}, {"arrows": "to", "from": "Se7en", "label": "genre", "to": "Crime"}, {"arrows": "to", "from": "Se7en", "label": "actor", "to": "Brad_Pitt"}, {"arrows": "to", "from": "Se7en", "label": "theme", "to": "Serial_Killer"}, {"arrows": "to", "from": "Se7en", "label": "theme", "to": "Serial Killer"}, {"arrows": "to", "from": "Goodfellas", "label": "genre", "to": "Crime"}, {"arrows": "to", "from": "Goodfellas", "label": "actor", "to": "Robert_De_Niro"}, {"arrows": "to", "from": "Goodfellas", "label": "theme", "to": "Gangster"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

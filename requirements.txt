@@ -1,3 +1,4 @@
 owlready2
 pandas
 streamlit
+pyvis
